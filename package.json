@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "",
+  "version": "",
+  "description": "Funsters Web App for Code.fun.do using Artificial Intelligence.",
+  "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "popper.js": "^1.14.1"
+  }
+}

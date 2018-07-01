@@ -1,0 +1,48 @@
+body{
+  background-image:url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.btn-block{
+  width: 100% !important;
+  height: 70px !important;
+  border: 3px solid red !important;
+  border-radius: 25px !important;
+}
+
+
+nav{
+    height: 55px !important;
+}
+
+.list{
+  margin-top:20%;
+}
+
+#match-list{
+  position: relative;
+  width: 100%;
+}
+
+/*Contacts*/
+.Contacts{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+	color:#ccc;
+	background-color:#222 ;
+}
+
+.Contacts i{
+	padding: 5px;
+	font-size: 20px;
+}
+
+.Contacts .social{
+	height:30px;
+	border:1px solid #ccc;
+}
+/*Contacts End*/

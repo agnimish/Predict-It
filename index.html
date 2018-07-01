@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link> -->
+    <link rel="stylesheet" href="./bootstrap.min.css"></link>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Cricket AI</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Predict-It</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar finished -->
+
+    <!-- Dropdown list -->
+    <div class="container">
+      <div class="row list">
+        <div class="dropdown">
+          <button class="btn btn-default btn-block dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <h4> &nbsp Search Live International Matches &nbsp <i class="caret"></i></h4>
+          </button>
+          <ul class="dropdown-menu" id="match-list" aria-labelledby="dropdownMenu1">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown list ends -->
+
+    <!-- Modal Starts -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Team Squads and other Data</h1>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h3 id="team1"></h3>
+                    <ul id="squad1list"></ul>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <h3 id="team2"></h3>
+                  <ul id="squad2list"></ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <h3>Match Current Score</h3>
+                  <h5>We update our data every 5 minutes</h5>
+                  <ul id="score"></ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <h3>Our Prediction</h3>
+          
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Modal Ends -->
+
+    <!-- Contacts -->
+    <div id="Contacts" class="Contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <h2>Stay in touch &nbsp;&nbsp
+            <a href="https://www.facebook.com/vaibhav.thakkar.16718" target="_blank"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://github.com/anujms1999/Predict-It" target="_blank"><i class="social fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.quora.com/profile/Vaibhav-Thakkar-7" target="_blank"><i class="social fa fa-quora" aria-hidden="true"></i></a>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <hr><p style="color:white;text-align: center;"><i class="fa fa-copyright" aria-hidden="true" style="font-size: 17px;" ></i>Copyright 2018 | All Rights Reserved | Site Developed By FunSters</p>
+    </div>
+    <!-- Contacts End -->
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Custom JS end -->
+
+  </body>
+</html>

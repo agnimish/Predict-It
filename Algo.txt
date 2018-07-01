@@ -1,0 +1,56 @@
+Algorithm 1 Modeling Batsmen
+Input: Players p ∈ {P (A, m) ∪ P (B, m)}, Career Statistics of player p: φ(p) Output: Batsmen Score of all the players: φBatsman Score
+    1: 2:
+3: 4:
+5: 6:
+7: 8: 9:
+10: 11:
+12:
+13: 14:
+forallplayersp∈{P(A,m)∪P(B,m)}do φ←φ(p)
+u ←   φBat   Inngs φMatches Played
+v←20∗φNum Centuries +5∗φNum Fifties w←0.3∗v+0.7∗φBat Avg
+φCareer Score ← u ∗ w
+M ← Last 4 matches played by p φRecent Score ← mean(Mp )
+end for
+forallplayersp∈{P(A,m)∪P(B,m)}do
+       Runs
+ φCareer Score ← φRecent Score ←
+φCareer Score max(φCareer Score)
+φRecent Score max(φRecent Score)
+        φBatsmen Score = 0.35 ∗ φCareer Score + 0.65 ∗ φRecent Score end for
+   
+
+
+
+
+Algorithm 2 Modeling Bowlers
+Input: Players p ∈ {P (A, m) ∪ P (B, m)}, Career Statistics of player p: φ(p)
+Output: Bowler Score of all the players: φBowler Score
+1: forallplayersp∈{P(A,m)∪P(B,m)}do
+2: φ←φ(p)
+3: u ←   φBowl   Inngs φMatches Played
+4: v←10∗φFWkts Hauls +φWkts Taken
+5: w ← φBowl Avg ∗ φBowl Eco
+6: φBowler Score ← u∗v w
+7: end for
+
+
+
+
+
+Algorithm 3 Relative Strength between Two Teams Input: Players p ∈ {P (A, m) ∪ P (B, m)},
+Batsman Score: φpBatsman Score, Bowler Score: φpBowler Score Output: Strength of Team A against Team B: SA/B
+1: forallplayersp∈{P(A,m)∪P(B,m)}do
+      2: φBatsman Score ←
+φBatsman Score max(φBatsman Score)
+    3: φBowler Score ←
+φBowler Score max(φBowler Score)
+    4: end for
+5: Bat StrengthA ←  p∈P (A,m) φpBatsman Score
+  
+6: Bowl StrengthA ←  p∈P (A,m) φpBowler Score   
+7: Bat StrengthB ←  p∈P (B,m) φpBatsman Score   
+8: Bowl StrengthB ←  p∈P (B,m) φpBowler Score
+9: SA/B = Bat StrengthA − Bat StrengthB
+Bowl StrengthB Bowl StrengthA

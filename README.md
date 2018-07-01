@@ -5,6 +5,9 @@ Funsters Web App for Code.fun.do using Artificial Intelligence. This app shows t
 Team Members:-
 
 Nimish Agarwal (https://github.com/agnimish)
+
 Vaibhav Thakkar (https://github.com/vaithak)
+
 Anuj Shah (https://github.com/anujms1999)
+
 url :- http://predictit.azurewebsites.net
